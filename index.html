@@ -1,0 +1,22 @@
+<html ng-app="app">
+  <head>
+    <title>chaingang</title>
+    <link rel="icon" href="http://5tephen.com/img/cheeseplane.gif" type="image/gif"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/lodash.js" type="text/javascript"></script>
+    <script src="js/angular.js" type="text/javascript"></script>
+    <script src="js/controller.js" type="text/javascript"></script>
+  </head>
+  <body ng-controller="ChainGangController">
+    <h1 class="center">chaingang</h1>
+
+    <div class="notecard center">
+      <form ng-submit="submit(input)">
+        <input ng-model="input" size="50">
+        <button type="submit">submit</button>
+      </form>
+      <div ng-repeat="link in chain">{{link}}</div>
+    </div>
+  </body>
+</html>
