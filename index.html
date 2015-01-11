@@ -16,7 +16,7 @@
         <input ng-model="input" size="50">
         <button type="submit">submit</button>
       </form>
-      <div ng-repeat="link in chain">{{link}}</div>
+      <div ng-repeat="link in chain track by $index">{{link}}</div>
     </div>
   </body>
 </html>
