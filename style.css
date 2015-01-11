@@ -1,0 +1,31 @@
+body {
+	background-color: goldenrod;
+	font-family: monospace;
+}
+
+a {
+	color: #CC0000;
+}
+
+a:hover {
+	color: yellow;
+}
+
+a:visited {
+	color: #AA0000;
+}
+
+.notecard {
+	background-color: white;
+	border: solid black 1px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+#canvas {
+  border: solid black 1px;
+}
