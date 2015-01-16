@@ -73,7 +73,7 @@ function requireGetParameter($parameter) {
   if(empty($_GET["newPhrase"])) {
     throw new Exception ("Parameter $parameter empty.");
   }
-  return $_GET[$parameter]; 
+  return mysqli_real_escape_string($_GET[$parameter]); 
 }
 
 /**
